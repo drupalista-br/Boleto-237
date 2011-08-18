@@ -42,10 +42,8 @@ class Banco_237 extends Boleto{
 	// 37-43    -> Conta do Cedente (sem dígito)   7
 	// 44-44    -> Zero (Fixo)                     1
 
-        $agencia = str_pad($boleto->arguments['agencia'], 4, 0, STR_PAD_LEFT);
-
         //positons 20 to 23
-        $boleto->febraban['20-44'] = $agencia;
+        $boleto->febraban['20-44'] = str_pad($boleto->arguments['agencia'], 4, 0, STR_PAD_LEFT);
         //positons 24 to 25
         $boleto->febraban['20-44'] .= $boleto->arguments['carteira'];
         //positons 26 to 36
