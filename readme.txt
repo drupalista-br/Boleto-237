@@ -3,5 +3,5 @@
 
 2. ARGUMENTOS
  'carteira'     ->  06 ou 03 (Verifique com o gerente)
- 'nosso_numero' ->  Conta do Cedente (sem dígito)   Max 11 characters
+ 'nosso_numero' ->  Max 11 characters
 
